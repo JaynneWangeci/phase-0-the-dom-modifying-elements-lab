@@ -1,34 +1,17 @@
 // index.js
 
-// 1. Create a new div element
-const newDiv = document.createElement("div");
+// Remove the main#main element
+const main = document.getElementById('main');
+main.remove();
 
-// 2. Add a class to the div
-newDiv.className = "container";
+// Create a new h1 element
+const newHeader = document.createElement('h1');
 
-// 3. Set the div's height to 300px
-newDiv.style.height = "300px";
+// Set the h1's id to 'victory'
+newHeader.id = 'victory';
 
-// 4. Set the div's width to 300px
-newDiv.style.width = "300px";
+// Set the h1's text content
+newHeader.textContent = "YOUR-NAME is the champion"; // Replace YOUR-NAME with your name
 
-// 5. Set the div's background color to yellow
-newDiv.style.backgroundColor = "yellow";
-
-// 6. Set the div's margin to 20px
-newDiv.style.margin = "20px";
-
-// 7. Set the div's padding to 10px
-newDiv.style.padding = "10px";
-
-// 8. Set the div's font size to 24px
-newDiv.style.fontSize = "24px";
-
-// 9. Set the div's font weight to bold
-newDiv.style.fontWeight = "bold";
-
-// 10. Set the div's text content
-newDiv.textContent = "YOUR-NAME is the champion"; // Replace YOUR-NAME with your name
-
-// 11. Append the div to the body
-document.body.append(newDiv);
+// Append the h1 to the body
+document.body.appendChild(newHeader);
